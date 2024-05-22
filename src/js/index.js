@@ -8,5 +8,10 @@ import "../styles/index.css";
 //import your own components
 import Home from "./component/home.jsx";
 
-//render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+let segundero = 1
+setInterval(() => {
+ReactDOM.render(<Home segundero={segundero}/>, document.querySelector("#app"));
+segundero += 1
+},1000);
+
+
